@@ -205,5 +205,3 @@ public class KONSULTASI {
         JOptionPane.showMessageDialog(null, "Terima kasih!", "SELESAI",JOptionPane.INFORMATION_MESSAGE);
     }
 }
-
-
