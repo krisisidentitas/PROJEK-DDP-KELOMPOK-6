@@ -178,6 +178,7 @@ public class KONSULTASI {
                                           - Durasi 10-20 menit, tingkatkan perlahan
                                           - Konsultasi dokter/pelatih dianjurkan
                                           """;
+                         default -> rekomendasi = "";
                     }
 
                     JOptionPane.showMessageDialog(null, "IMT Anda: "+String.format("%.2f", imt)+"\nKategori: "+kategori+"\nRekomendasi Aktivitas: \n"+rekomendasi,
@@ -204,4 +205,5 @@ public class KONSULTASI {
         JOptionPane.showMessageDialog(null, "Terima kasih!", "SELESAI",JOptionPane.INFORMATION_MESSAGE);
     }
 }
+
 
