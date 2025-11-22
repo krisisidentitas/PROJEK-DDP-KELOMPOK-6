@@ -57,8 +57,8 @@ public class KONSULTASI {
                             loop = false;
                         } catch (HeadlessException | NumberFormatException ie) {
                             JOptionPane.showMessageDialog(null,
-                                    "Harus berupa angka yang benar!\nContoh: 55 atau 165",
-                                    "⚠ Kesalahan Input",
+                                    "Input harus berupa angka!",
+                                    "Kesalahan Input, tipe data salah.",
                                     JOptionPane.ERROR_MESSAGE);
                         }
                     }
@@ -204,4 +204,5 @@ public class KONSULTASI {
         JOptionPane.showMessageDialog(null, "Terima kasih!", "SELESAI",JOptionPane.INFORMATION_MESSAGE);
     }
     
+
 }
