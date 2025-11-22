@@ -7,7 +7,7 @@ public class KONSULTASI {
         double imt = 0;
         String kategori = "",rekomendasi = "";
         while (ulang) {
-            String[] menu = {"Cek Indeks Massa Tubuh", "Rekomendasi Shade Dari Undertone", "Rekomendasi Aktivitas dari IMT"};
+            String[] menu = {"Cek Indeks Massa Tubuh (IMT)", "Rekomendasi Shade Dari Undertone", "Rekomendasi Aktivitas dari IMT"};
             int mn = JOptionPane.showOptionDialog(null, """
                                                         ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
                                                         ============================================
@@ -55,7 +55,7 @@ public class KONSULTASI {
                             JOptionPane.showMessageDialog(null, "IMT Anda: " + String.format("%.2f", imt) + "\nKategori: " + kategori,
                                     "Hasil pengecekan", JOptionPane.INFORMATION_MESSAGE);
                             loop = false;
-                        } catch (HeadlessException | NumberFormatException ie) {
+                        } catch (Exception ie) {
                             JOptionPane.showMessageDialog(null,
                                     "Input harus berupa angka!",
                                     "Kesalahan Input, tipe data salah.",
@@ -203,6 +203,5 @@ public class KONSULTASI {
 
         JOptionPane.showMessageDialog(null, "Terima kasih!", "SELESAI",JOptionPane.INFORMATION_MESSAGE);
     }
-    
-
 }
+
